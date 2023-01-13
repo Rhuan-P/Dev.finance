@@ -1,0 +1,161 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  font-size: 6.25%
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16rem;
+  font-weight: 400;
+  background: #F0F2F5;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ====== AUXILIARES ====== */
+
+.container {
+  /* Container pai, ele pega de ponta a ponta*/
+  display: block;
+  width: 100%;
+}
+
+.content {
+  /* Container filho, eu defino o tamanho máximo */
+  width: 90%;
+  max-width: 1120rem;
+  margin: 0 auto;
+}
+
+/* ====== HEADER ====== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background: #2D4A22;
+  box-shadow: inset 0 -33rem #F0F2F5;
+}
+
+.header .content {
+  display: flex;
+  flex-direction: column;
+  gap: 84rem;
+}
+
+.logo {
+  max-width: 156px;
+  margin: 30rem auto 0 auto;
+}
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32rem;
+}
+
+.values__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  flex: 1;
+  min-width: 300px;
+  padding: 20rem 32rem;
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+
+.values__item strong {
+  font-size: 36rem;
+  font-weight: 500;
+  color: #363F5F;
+}
+
+.values__item-total {
+  background: #49AA26;
+}
+
+.values__item-total span,
+.values__item-total strong {
+  color: #FFFFFF;
+}
+
+.values__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #363F5F;
+}
+
+.values__header img {
+  max-width: 32rem;
+}
+
+/* ====== Table ====== */
+.table__container {
+  margin-top: 64rem;
+}
+
+.table__container .content {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 500px;
+  color: #969CB2;
+  text-align: left;
+  white-space: nowrap;
+  border-spacing: 0 8rem;
+}
+
+table th {
+  font-weight: 400;
+  padding: 16rem 32rem;
+}
+
+table th:first-child {
+  width: 45%;
+}
+
+table th:last-child {
+  width: 156rem;
+}
+
+table td {
+  padding: 20rem 32rem;
+  background: #FFFFFF;
+}
+
+table td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+table td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+table td strong {
+  font-weight: 400;
+  color: #363F5F;
+}
+
+table td.increase {
+  color: #49AA26;
+}
+
+table td.decrease {
+  color: #E92929;
+}
